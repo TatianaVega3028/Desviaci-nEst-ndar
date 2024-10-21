@@ -1,9 +1,11 @@
 import unittest
 
+from src.logica.DesviacionEstandar import DesviacionEstandar
 
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)  # add assertion here
+class TestDesviacionEstandar(unittest.TestCase):
+    def test_DesviacionEstandar_vacio_retornaNone(self):
+        desviacionEstandar=DesviacionEstandar([])
+        self.assertIsNone(desviacionEstandar,DesviacionEstandar())
 
 
 if __name__ == '__main__':
